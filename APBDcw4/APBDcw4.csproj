@@ -12,20 +12,4 @@
         <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Compile Remove="Warehouse\DBContext\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <EmbeddedResource Remove="Warehouse\DBContext\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Content Remove="Warehouse\DBContext\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="Warehouse\DBContext\**" />
-    </ItemGroup>
-
 </Project>

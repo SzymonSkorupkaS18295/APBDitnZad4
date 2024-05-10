@@ -59,8 +59,7 @@ public class WarehouseController : ControllerBase
                     command.Parameters.AddWithValue("@IdWarehouse", entry.IdWarehouse);
                     command.Parameters.AddWithValue("@Amount", entry.Amount);
                     command.Parameters.AddWithValue("@CreatedAt", entry.CreatedAt);
-
-                    // Execute the procedure
+                    
                     var result = await command.ExecuteNonQueryAsync();
 
                     return Ok(new { message = "Poprawnie dodano produkt do magazynu." });
